@@ -1,2 +1,2 @@
 FROM java:8
-sudo apt-get install jq 
+RUN sudo apt-get install jq 
