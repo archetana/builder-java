@@ -8,6 +8,7 @@ RUN apt-get update && apt-get install -y \
     wget \
     unzip \
     git-all \
+    vim \
     default-mysql-client \
     nodejs \
     npm && \
