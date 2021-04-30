@@ -1,5 +1,5 @@
 FROM adoptopenjdk/openjdk11
-RUN curl -fsSL https://deb.nodesource.com/setup_12.x && \
+RUN curl -fsSL https://deb.nodesource.com/setup_12.x  | bash - && \
     apt-get update && apt-get install -y \
     apt-transport-https \
     ca-certificates \
