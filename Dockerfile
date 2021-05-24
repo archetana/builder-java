@@ -1,6 +1,6 @@
 FROM adoptopenjdk/openjdk11
 RUN curl -fsSL https://deb.nodesource.com/setup_12.x  | bash - && \
-    curl -fsSL https://get.docker.com -o get-docker.sh&& \
+    curl -fsSL https://get.docker.com -o get-docker.sh && \
     apt-get update && apt-get install -y \
     apt-transport-https \
     ca-certificates \
