@@ -1,6 +1,6 @@
 FROM adoptopenjdk/openjdk11
 RUN curl -fsSL https://deb.nodesource.com/setup_12.x  | bash - && \
-    curl -fsSL https://get.docker.com -o get-docker.sh | bash - && \
+    curl -fsSL https://get.docker.com -o get-docker.sh&& \
     apt-get update && apt-get install -y \
     apt-transport-https \
     ca-certificates \
@@ -13,6 +13,7 @@ RUN curl -fsSL https://deb.nodesource.com/setup_12.x  | bash - && \
     vim \
     default-mysql-client \
     nodejs && \
+    sh get-docker.sh && \
     npm install --global yarn && \
     yarn global add semver && \
     curl -fsSLo /usr/share/keyrings/kubernetes-archive-keyring.gpg https://packages.cloud.google.com/apt/doc/apt-key.gpg && \
